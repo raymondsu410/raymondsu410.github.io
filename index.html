@@ -3,19 +3,13 @@
     <meta property="og:site_name" content="Snapchat" />
     <meta property="og:title" content="The Fastest Way to Share a Moment!" />
   </head>
-
   <body>
     <!-- Other Page HTML -->
 
-    <button
-      class="class1 class2 snapchat-share-button"
-      data-share-url="https://kit.snapchat.com/"
-    >
-      Share on Snapchat
-    </button>
+    <div class="snapchat-creative-kit-share"
+    data-share-url="https://kit.snapchat.com/"></div>
 
     <!-- Other Page HTML -->
-
     <script>
       // Load the SDK asynchronously
       (function (d, s, id) {
@@ -27,12 +21,6 @@
         js.src = "https://sdk.snapkit.com/js/v1/create.js";
         sjs.parentNode.insertBefore(js, sjs);
       })(document, "script", "snapkit-creative-kit-sdk");
-
-      window.snapKitInit = function () {
-        snap.creativekit.initalizeShareButtons(
-          document.getElementsByClassName("snapchat-share-button")
-        );
-      };
     </script>
   </body>
 </html>
