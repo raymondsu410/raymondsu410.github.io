@@ -2,14 +2,25 @@
   <head>
     <meta property="og:site_name" content="Snapchat" />
     <meta property="og:title" content="The Fastest Way to Share a Moment!" />
+    <!-- The following are optional -->
+    <meta
+      property="snapchat:sticker"
+      content="https://kit.snapchat.com/ckweb/test/image.png"
+    />
+    <meta property="snapchat:app_id" content="YOUR_APP_ID_HERE" />
+    <meta property="snapchat:publisher_id" content="YOUR_PUBLISHER_ID_HERE" />
   </head>
+
   <body>
-    <!-- Other Page HTML -->
+    <!-- See following sections for more information on parameters -->
+    <div
+      class="snapchat-creative-kit-share"
+      data-theme="dark"
+      data-size="large"
+      data-text="false"
+      data-share-url="https://kit.snapchat.com/"
+    ></div>
 
-    <div class="snapchat-creative-kit-share"
-    data-share-url="https://kit.snapchat.com/"></div>
-
-    <!-- Other Page HTML -->
     <script>
       // Load the SDK asynchronously
       (function (d, s, id) {
